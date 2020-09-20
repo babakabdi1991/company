@@ -1,0 +1,346 @@
+
+
+a , a:hover{
+    text-decoration: none;
+}
+a{
+    color:white;
+}
+
+#header{
+    position: fixed;
+    background-color: lightgray;
+    right: 0;
+    left: 0;
+    top: 0;
+    padding: 20px 40px;
+    z-index: 100;
+}
+
+
+#toggler{
+    position: absolute;
+    
+    left: 40px;
+    top: 20px;
+    font-size: 30px;
+}
+#nav{
+    position: fixed;
+    right:-250px;
+    top: 0;
+    bottom: 0;
+    width: 250px;
+    background-color: rgba(0,0,0,0.6);
+    padding: 30px 20px;
+    line-height: 2.5rem;
+    transition-duration: 0.4s;
+}
+#nav a{
+    font-weight: 500;
+}
+#nav a:hover{
+    color: lightblue;
+}
+
+#slider .carousel-item{
+    height: 100vh;
+    min-height: 580px;
+    background-position: center;
+    background-size: cover;
+}
+#slider .carousel-item .slider-container{
+    padding-top: 100px;
+    color:white;
+    max-width: 640px;
+    margin: 10% auto;
+}
+#slider .carousel-item .overlay p{
+    padding: 20px;
+    margin: 40px 0;
+    text-align: center;
+}
+.overlay{
+    z-index: 10;
+}
+#slider .btn{
+    font-size: 25px;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+#slider .carousel-item .overlay{
+    /*content: "";*/
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+.carousel-control-next, .carousel-control-prev{
+    z-index: 50;
+}
+
+
+#slider li{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+#about{
+    background: url("../images/about/world.jpg") center / cover no-repeat fixed;
+    position: relative;
+}
+#about::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.9);
+}
+
+#about .text-justify{
+    font-size: 14px;
+}
+.content-text p{
+    max-width: 900px;
+    margin:0 auto 60px;
+}
+
+#service i{
+    font-size: 35px;
+    color: #28a745;
+} 
+
+#service .text-justify{
+    font-size: 14px;
+    color: #444;
+}
+
+#stats{
+    background: url('../images/other/stats.jpg') center /cover no-repeat fixed ;
+}
+#stats .counter{
+    font-size: 56px;
+    color: yellowgreen;
+    margin-bottom: 10px;
+    font-family: yekanf;
+}
+#stats .description{
+    color: white;
+    font-size: 25px;
+    
+}
+#bars{
+    margin-bottom: 60px;
+}
+#bars span{
+    font-size: 14px;
+}
+#bars .progress-bar{
+    width:0;
+    padding: 0 ;
+    transition-duration: 1.5s;
+}
+
+.portfolio-image-content{
+    content: "";
+    position: absolute;
+    left:0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    background-clip: content-box;
+    padding: 0 50%;
+    transition-duration: 0.3s;
+}
+
+#portfolio{
+    padding-bottom: 60px;
+}
+
+
+.portfolio-image-content:hover{
+    padding: 0;
+}
+
+.portfolio-image-content:hover a{
+    opacity: 1;
+}
+
+.portfolio-image-content a{
+    display: inline-block;
+    line-height: 100%;
+    color:black;
+    font-size: 20px;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: white;
+    transition-duration: 0.3s;
+    opacity: 0;
+}
+.portfolio-image-content li{
+    background-color: transparent;
+}
+
+.portfolio-image-content a:hover{
+    background-color: #2c6;
+}
+
+#portfolio-filters li{
+    width: 100px;
+    height: 50px;
+    padding-top: 10px;
+    text-align: center;
+    background-color: white;
+    margin: 0 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transparent: 1s;
+}
+
+#portfolio-filters li.filter-active ,#portfolio-filters li:hover {
+    border: 1px solid lightgray;
+    background-color: #2c6;
+    color: white;
+}
+#team{
+    padding-bottom: 60px;
+}
+.team-overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 0;
+    padding-top: 0;
+    background-color: rgba(0,0,0,0.4);
+    transition-duration: 0.5s;
+}
+.team-overlay i{
+    font-size: 25px;
+    margin: 5px 6px;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+.team-overlay i:hover , .team-overlay a:hover{
+    color: #2c6;
+}
+
+#team .team-context:hover .team-overlay{
+    height: 100%;
+    padding-top: 30%;
+}
+
+#clinent{
+    background-color: #f4f4f4;
+}
+
+#clinent img{
+    opacity: 0.5;
+    transition-duration: 0.5s;
+}
+#clinent img:hover{
+    opacity: 1;
+}
+
+.owl-carousel button.owl-dot{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 0 4px;
+    outline: none;
+}
+.owl-carousel button.owl-dot.active{
+    background-color: #2c6;
+}
+
+#footer{
+    background-color: #343a40;
+    padding: 50px 0;
+}
+
+#footer hr{
+    background-color: whitesmoke;
+    margin-top: 0;
+    color: white;
+}
+
+#footer p{
+    font-size: 14px;
+}
+
+#footer input{
+    margin: 0;
+    padding: 0;
+    border-style: none;
+    shadow:0;
+}
+#footer .link li{
+    border-bottom: 1px solid #555;
+}
+
+#footer .link li:hover{
+    color: #2c6;
+}
+
+#footer .link i{
+    font-size: 8px;
+    opacity: 0.6;
+}
+#footer .link span{
+    opacity: 0.6;
+    font-size: 14px;
+    font-weight: 300;
+    padding-bottom: 15px;
+}
+#go-to-home{
+    position: fixed;
+    left:40px;
+    bottom: 20px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-weight: bold;
+    background-color: rgba(200,200,200,0.4);
+    text-align: center;
+    line-height: 2em;
+    transition-duration: 0.5s;
+}
+
+#go-to-home:hover{
+    background-color: #2c6;
+    color:black;
+}
+@media(min-width:992px){
+    #toggler{
+        display: none;
+    }
+    #logo{
+        float: left;
+    }
+    #nav{
+        position:static;
+        width: auto;
+        background-color: transparent;
+        padding-top: 0;
+    }
+    
+    #nav li{
+        float: right;
+        margin-left: 25px;
+        padding: 0;
+    }
+    #header h4{
+        margin-bottom: 0;
+        padding-top: 4px;
+    }
+}
